@@ -281,6 +281,15 @@ const TechTag = styled.span`
 
 const projectsData = [
   {
+    title: "Manchitra Project",
+    description: "Co-developed an interactive map-based platform to connect and promote local music communities across Rajasthan. Features include artist registration, OTP-based login, media uploads, and real-time map-based discovery. Developed under the mentorship of IIT Jodhpur professors using Agile methodology.",
+    image: "https://via.placeholder.com/300x200", // Replace with actual image link if available
+    techStack: ["React.js", "Django", "PostgreSQL", "AWS S3", "Render", "Vercel"],
+    github: "https://github.com/tanmaycd/Rajasthan-music-community/tree/main",
+    live: "https://manchitra.vercel.app/"
+  }
+,  
+  {
     title: "Music Player Website",
     description: "Developed a dynamic music player web application with features like song playback, playlist management, and user authentication.",
     image: "https://via.placeholder.com/300x200", // Replace with actual image link
@@ -366,6 +375,7 @@ const Projects = () => {
                   </ProjectLink>
                   <ProjectLink href={project.live} target="_blank" rel="noopener noreferrer">
                     {/* <FaExternalLinkAlt />  */}
+                    Live Demo
                   </ProjectLink>
                 </ProjectLinks>
               </ProjectContent>
