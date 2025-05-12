@@ -133,7 +133,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'about', 'skills', 'projects', 'contact'];
+      const sections = ['home', 'about', 'skills', 'projects', 'experience', 'achievements', 'certificates', 'education', 'contact'];
       const current = sections.find(section => {
         const element = document.getElementById(section);
         if (element) {
@@ -157,7 +157,8 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navItems = ['Home', 'About', 'Skills', 'Projects', 'Contact'];
+  // Updated nav items to include new sections
+  const navItems = ['Home', 'About', 'Skills', 'Projects', 'Experience', 'Achievements', 'Certificates', 'Education', 'Contact'];
 
   return (
     <>
